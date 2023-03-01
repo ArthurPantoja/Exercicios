@@ -1,0 +1,18 @@
+body{
+    background: rgb(132, 132, 204);
+    text-align: center;
+}
+footer{
+    font-style: italic;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+}
+section{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgb(182, 159, 159);
+}
