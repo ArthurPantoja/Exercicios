@@ -4,7 +4,6 @@ body{
 }
 
 section{
-    background: rgba(9, 50, 68, 0.767);
     background: rgb(255, 251, 251);
     border-radius: 20px;
     padding: 20px;
@@ -17,4 +16,14 @@ footer{
     padding: 20px;
     width: 500px;
     margin: auto;
+}
+#msg01{
+    font-size: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-decoration-break: clone;
+    
+}
+#msg{
+    font-size: 25px;
 }
