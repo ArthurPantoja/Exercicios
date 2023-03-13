@@ -1,0 +1,17 @@
+body{
+    background: rgb(132, 132, 204);
+}
+
+section{
+    background: rgb(255, 251, 251);
+    border-radius: 20px;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgb(182, 159, 159);
+}
+footer{
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+}

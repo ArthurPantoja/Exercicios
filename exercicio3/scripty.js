@@ -8,7 +8,7 @@ function ok() {
         window.alert('ERRO: Preencha os espaços')
     }else{
         
-        res.innerHTML = 'Contando:  '
+        res.innerHTML = 'Contando:  <br>'
 
         var i = Number(ini.value)
         var f = Number(fim.value)
