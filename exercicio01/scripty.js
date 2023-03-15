@@ -3,9 +3,10 @@ function carrer() {
     var img = window.document.getElementById('image')
     var mens = window.document.getElementById('msg01')
     var date = new Date()
+    var mi = date.getMinutes()
     var hora = date.getHours()
     
-    msg.innerHTML = `A hora atua e ${hora}`
+    msg.innerHTML = `A hora atua e ${hora} Horas e ${mi} Minutos`
 
     if(hora >= 0 && hora < 12){
         img.src = 'manha.png'
