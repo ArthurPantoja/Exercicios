@@ -14,18 +14,16 @@
     <section>
         <div>
             <p>Digite um numero entre 1 a 100: <input type="number" name="nu1" id="nu1"> 
-            <input type="button" value="Adicionar" ondblclick="veri()">
+            <input type="button" value="Adicionar" onclick="veri()" onmouseenter="clic()" id="re">
             </p>
-        </div>
-        <div>
             <select id="vam" size="5"></select>
-
-            <input type="button" value="Limpar" onclick="limp()">
-        </div>
-
-        <div> <br>
+            <input type="button" value="Limpar" onclick="limp()"> <br>
             <input type="button" value="Verificar" onclick="ver()">
-            <li id="g"></li>
+        </div>
+       
+        <div id="resp">
+            
+            
         </div>
     </section>
 
