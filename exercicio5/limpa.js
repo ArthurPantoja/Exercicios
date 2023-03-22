@@ -4,9 +4,3 @@ function limp() {
     nen.innerHTML = ''
     res.innerHTML = ''
 }
-
-function clic() {
-    var tr = document.getElementById('re')
-
-    tr.style.background('red')
-}

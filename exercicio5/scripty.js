@@ -48,27 +48,39 @@ function veri() {
 
 function ver(){
     if(valores.length == 0){
-        window.alert("ERRO: Adicione valores antes d finalizar")
+        window.alert("ERRO: Adicione valores antes de finalizar")
     }else{
-        let total = valores.length
-        let maior = valores[0]
-        let menor = valores[0]
-        let soma = 0 
-        let media = 0
 
-        for(var pos in valores){
-            soma += valores[pos]
-            if(valores[pos] > maior)
-                maior = valores[pos]
-            if(valores[pos] < menor)
-                menor = valore[pos]
-        }
-        media = soma / total
-        res.innerHTML += `<p>Ao todo temos ${total} de numeros!<p/>`
-        res.innerHTML += `<p>O <strong>Maior</strong> numero detectado na lista e ${maior}<p/>`
-        res.innerHTML += `<p>O <strong>Menor</strong> bunero encontrado na Lista e ${menor}<p/>`
-        res.innerHTML += `<p>A soma de todos os valores e = ${soma}<p/>`
-        res.innerHTML += `<p>A media obtida foi ${media}!<p/>`
+
+         new Promise((resolve, resject) => {
+            setTimeout(() => {
+                let total = valores.length
+                let maior = valores[0]
+                let menor = valores[0]
+                let soma = 0 
+                let media = 0
+        
+                for(var pos in valores){
+                    soma += valores[pos]
+                    if(valores[pos] > maior)
+                        maior = valores[pos]
+                    if(valores[pos] < menor)
+                        menor = valore[pos]
+                }
+                media = soma / total
+                res.innerHTML += `<p>Ao todo temos ${total} de numeros!<p/>`
+                res.innerHTML += `<p>O <strong>Maior</strong> numero detectado na lista e ${maior}<p/>`
+                res.innerHTML += `<p>O <strong>Menor</strong> bunero encontrado na Lista e ${menor}<p/>`
+                res.innerHTML += `<p>A soma de todos os valores e = ${soma}<p/>`
+                res.innerHTML += `<p>A media obtida foi ${media}!<p/>`
+
+                resolve()
+            }, 1000)
+        }) 
+        .then(() => {
+            res.innerHTML += ("Promise finished")
+        })  
+        
     }
     
 }
